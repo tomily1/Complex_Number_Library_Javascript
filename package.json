@@ -1,0 +1,22 @@
+{
+  "name": "complex_number_library",
+  "version": "1.0.0",
+  "description": "Allows reuse for calculations involving complex numbers", 
+  "keywords": [
+    "Complex Numbers",
+    "Numbers",
+    "Math",
+    "Calculus"
+  ],
+  "bugs":"https://github.com/tomly1/Complex_Number_Library/issues"
+  "main": "lib/complex_number_library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomilayo Israel",
+  "license": "ISC", 
+  "devDependencies":{
+  	"mocha":"*",
+  	"expect":"*"
+  }
+}
