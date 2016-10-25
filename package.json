@@ -9,7 +9,7 @@
     "Calculus"
   ],
   "bugs":"https://github.com/tomly1/Complex_Number_Library/issues",
-  "main": "lib/complex_number_library",
+  "main": "lib/complex",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
