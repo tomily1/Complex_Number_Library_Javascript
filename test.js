@@ -30,14 +30,28 @@ describe('The complexNumber library', function(){
 		expect(t.img).to.equal(3);
 	});
 
-	it('should subtract two complex numbers', function(){
+	it('should subtract complex numbers', function(){
 		var x = new complex(1, 2);
 		var y =  new complex(1,1);
-		var subtract = x.sub(y);
+		var z = new complex(1, 11);
+
+		var subtract = x.sub(y);		
 
 		expect(subtract.real).to.equal(0);
 		expect(subtract.img).to.equal(1);
 	});
+
+	it('should subtract multiple complex numbers', function(){
+		
+		var z = new complex(1, 11);
+		var y =  new complex(1,1);
+		var x = new complex(1, 2);
+
+		var t = ((z.sub(y)).sub(x));
+		
+		expect(t.real).to.equal(-1);
+		expect(t.img).to.equal(8);
+	});	
 
 	it('should multiply two complex numbers', function(){
 		var x = new complex(1, 4);
