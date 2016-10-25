@@ -1,4 +1,4 @@
-var lib = require('./lib/complex');
+var complex = require('./lib/complex.js');
 var expect = require('expect.js');
 
 describe('The complexNumber library', function(){
