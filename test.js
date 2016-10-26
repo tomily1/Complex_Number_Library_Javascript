@@ -151,12 +151,12 @@ describe('The complexNumber library', function(){
 
 	it('should return the hyperbolic sine of the complex number', function(){
 		var z = new complex(1, 2).sinh().toString();
-		expect(z).to.equal('-0.4890562590+1.403119251i');
+		expect(z).to.equal('-0.489056259+1.403119251i');
 	});
 
-	it('should return the hycosine of the complex number', function(){
+	it('should return the hyperbolic cosine of the complex number', function(){
 		var z = new complex(1, 2).cosh().toString();
-		expect(z).to.equal('-0.6421481247+1.068607421i');
+		expect(z).to.equal('-0.642148125+1.068607421i');
 	});
 
 	it('should return the tangent of the complex number', function(){
