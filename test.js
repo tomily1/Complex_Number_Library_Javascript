@@ -83,7 +83,56 @@ describe('The complexNumber library', function(){
 		expect(result.img).to.equal(10/13);
 	});
 
-	
+	it('should find the conjugate of complex numbers', function(){
+
+		var conjugateNumber = new complex(1 , 3).conjugate();
+
+		expect(conjugateNumber.real).to.equal(1);
+		expect(conjugateNumber.img).to.equal(-3);
+
+	});
+
+	it('should find the conjugate of complex numbers', function(){
+
+		var conjugateNumber = new complex(-1 , -3).conjugate();
+
+		expect(conjugateNumber.real).to.equal(-1);
+		expect(conjugateNumber.img).to.equal(3);
+	});
+
+	it('should find the magnitude of complex numbers', function(){
+
+		var magnitudeNumber = new complex(-3 , -4).magnitude();
+		expect(magnitudeNumber).to.equal(5);
+	});
+
+	it('should test the equals method', function(){
+		expect(new complex(2, 3).equals(new complex(2, 3))).to.be.ok();
+		expect(new complex(2, 3).equals(new complex(2, 4))).not.to.be.ok();
+		expect(new complex(2, 3).equals(new complex(1, 3))).not.to.be.ok();
+	});
+
+	it('should multiply complex numbers by -1', function(){
+
+		var negateNumber = new complex(-3 , -4).negate();
+		expect(negateNumber.real).to.equal(3);
+		expect(negateNumber.img).to.equal(4);
+	});
+
+	it('should calculate the angle between the real and the im vectors', function(){
+		expect(new complex(1, 1).angle()).to.equal(Math.PI / 4);
+		expect(new complex(-1, -1).angle()).to.equal(-3 * Math.PI / 4);
+		expect(new complex(0, 1).angle()).to.equal(Math.PI / 2);
+		expect(new complex(1, 0.5 * Math.sqrt(4 / 3)).angle()).to.equal(Math.PI / 6);
+		expect(new complex(1, 0.5 * Math.sqrt(4 / 3)).angle()).to.equal(Math.PI / 6);
+	});
+
+	it('should return values in string', function(){
+		var value1 = new complex(1,3);
+		var value2 = new complex(2,1);
+		var total = value1.add(value2);
+		expect(total.toString()).to.equal('3+4i');
+	});
 
 
 
