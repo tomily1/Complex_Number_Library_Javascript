@@ -134,6 +134,37 @@ describe('The complexNumber library', function(){
 		expect(total.toString()).to.equal('3+4i');
 	});
 
+	it('should return the sine of the complex number', function(){
+		var z = new complex(1, 2).sin().toString();
+		expect(z).to.equal('3.165778513+1.959601041i');
+	});
+
+	it('should return the cosine of the complex number', function(){
+		var z = new complex(1, 2).cos().toString();
+		expect(z).to.equal('2.032723007-3.051897799i');
+	});
+
+	it('should return the tangent of the complex number', function(){
+		var z = new complex(1, 2).tan().toString();
+		expect(z).to.equal('0.03381282608+1.014793616i');
+	});
+
+	it('should return the hyperbolic sine of the complex number', function(){
+		var z = new complex(1, 2).sinh().toString();
+		expect(z).to.equal('-0.4890562590+1.403119251i');
+	});
+
+	it('should return the hycosine of the complex number', function(){
+		var z = new complex(1, 2).cosh().toString();
+		expect(z).to.equal('-0.6421481247+1.068607421i');
+	});
+
+	it('should return the tangent of the complex number', function(){
+		var z = new complex(1, 2).tanh().toString();
+		expect(z).to.equal('1.166736257-0.2434582012i');
+	});
+
+
 
 
 });
