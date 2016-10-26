@@ -172,6 +172,16 @@ describe('The complexNumber library', function(){
 		expect(total.toPolar()).to.equal('1.4142135623730951 0.7853981633974483');
 	});
 
+	it('it should return the exponential', function(){
+		var z = new complex(4,3).exp().toString();
+		expect(z).to.equal('-54.05175886+7.704891373i');
+	});
+
+	it('it should take the natural logarithm', function(){
+		var z = Complex.from('4+3i').log().toPrecision(10).toString();
+		expect(z).to.equal('1.609437912+0.6435011088i');
+	});
+
 
 
 
