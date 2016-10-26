@@ -174,14 +174,18 @@ describe('The complexNumber library', function(){
 
 	it('it should return the exponential', function(){
 		var z = new complex(4,3).exp().toString();
-		expect(z).to.equal('-54.05175886+7.704891373i');
+		expect(z).to.equal('-54.051758861+7.704891373i');
 	});
 
 	it('it should take the natural logarithm', function(){
-		var z = Complex.from('4+3i').log().toPrecision(10).toString();
-		expect(z).to.equal('1.609437912+0.6435011088i');
+		var z = new complex(4,3).log().toString();
+		expect(z).to.equal('1.609437912+0.643501109i');
 	});
 
+	it('should take the square root of the complex number', function(){
+		var z = new complex(1,4).sqrt().toString();
+		expect(z).to.equal('1.60048518+1.249621068i');
+	});
 
 
 
