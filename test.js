@@ -56,7 +56,7 @@ describe('The complexNumber library', function(){
 	it('should multiply two complex numbers', function(){
 		var x = new complex(1, 4);
 		var y =  new complex(3,2);
-		var result = x.multi(y);
+		var result = x.multiply(y);
 
 		expect(result.real).to.equal(-5);
 		expect(result.img).to.equal(14);
@@ -67,7 +67,7 @@ describe('The complexNumber library', function(){
 		var x =  new complex(1, 4);
 		var y =  new complex(3,2);
 		var z =  new complex(1,2);
-		var result = (x.multi(y)).multi(z);
+		var result = (x.multiply(y)).multiply(z);
 
 		expect(result.real).to.equal(-33);
 		expect(result.img).to.equal(4);
@@ -82,5 +82,9 @@ describe('The complexNumber library', function(){
 		expect(result.real).to.equal(11/13);
 		expect(result.img).to.equal(10/13);
 	});
+
+	
+
+
 
 });
