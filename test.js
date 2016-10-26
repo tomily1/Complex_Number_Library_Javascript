@@ -186,9 +186,4 @@ describe('The complexNumber library', function(){
 		var z = new complex(1,4).sqrt().toString();
 		expect(z).to.equal('1.60048518+1.249621068i');
 	});
-
-
-
-
-
 });
