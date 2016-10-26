@@ -146,7 +146,7 @@ describe('The complexNumber library', function(){
 
 	it('should return the tangent of the complex number', function(){
 		var z = new complex(1, 2).tan().toString();
-		expect(z).to.equal('0.03381282608+1.014793616i');
+		expect(z).to.equal('0.033812826+1.014793616i');
 	});
 
 	it('should return the hyperbolic sine of the complex number', function(){
@@ -159,10 +159,20 @@ describe('The complexNumber library', function(){
 		expect(z).to.equal('-0.642148125+1.068607421i');
 	});
 
-	it('should return the tangent of the complex number', function(){
+	it('should return the hyperbolic tangent of the complex number', function(){
 		var z = new complex(1, 2).tanh().toString();
-		expect(z).to.equal('1.166736257-0.2434582012i');
+		expect(z).to.equal('1.166736257-0.243458201i');
 	});
+
+	it('should return values in Polar Form', function(){
+		var value1 = new complex(-1,4);
+		var value2 = new complex(2,-3);
+		var total = value1.add(value2);
+		expect(total.toString()).to.equal('1+i');
+		expect(total.toPolar()).to.equal('1.4142135623730951 0.7853981633974483');
+	});
+
+
 
 
 
