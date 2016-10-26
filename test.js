@@ -112,7 +112,7 @@ describe('The complexNumber library', function(){
 		expect(new complex(2, 3).equals(new complex(1, 3))).not.to.be.ok();
 	});
 
-	it('should multiply complex numbers by -1', function(){
+	it('should multiply complex numbers by -1 by calling the negate function ', function(){
 
 		var negateNumber = new complex(-3 , -4).negate();
 		expect(negateNumber.real).to.equal(3);
