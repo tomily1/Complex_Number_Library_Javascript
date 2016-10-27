@@ -12,7 +12,7 @@ Node
 
 You can get this package with NPM:
 
-    npm install #########
+    npm install complex_number_library
 
 ```js
 var Complex = require('complex');
