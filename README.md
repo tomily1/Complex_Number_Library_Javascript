@@ -5,7 +5,9 @@ Complex
 
 Complex is a libary that deals with Complex Numbers in JavaScript. It
 provides several methods ranging from add, multiply numbers as well as calculate the
-magnitude and angle(rad) in the complex plane.
+magnitude and angle(rad) in the complex plane. A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers and i is the imaginary unit which satisfies the equation i^2 = −1.
+
+![alt tag](https://en.wikipedia.org/wiki/File:Complex_number_illustration.svg)
 
 Application of Complex Equations
 --------------------------------
