@@ -5,7 +5,38 @@ Complex
 
 Complex is a libary that deals with Complex Numbers in JavaScript. It
 provides several methods ranging from add, multiply numbers as well as calculate the
-magnitude and angle(rad) in the complex plane.
+magnitude and angle(rad) in the complex plane. A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers and i is the imaginary unit which satisfies the equation i^2 = −1.
+
+![alt tag](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Complex_number_illustration.svg/220px-Complex_number_illustration.svg.png)
+
+Application of Complex Equations
+--------------------------------
+Complex numbers have essential concrete applications in a variety of scientific and related areas such as signal processing, control theory, electromagnetism, fluid dynamics, quantum mechanics, cartography, and vibration analysis.
+
+#### Control theory
+In control theory, systems are often transformed from the time domain to the frequency domain using the Laplace transform. The system's poles and zeros are then analyzed in the complex plane. The root locus, Nyquist plot, and Nichols plot techniques all make use of the complex plane.
+
+In the root locus method, it is especially important whether the poles and zeros are in the left or right half planes, i.e. have real part greater than or less than zero. If a linear, time-invariant (LTI) system has poles that are
+
+in the right half plane, it will be unstable,
+all in the left half plane, it will be stable,
+on the imaginary axis, it will have marginal stability.
+If a system has zeros in the right half plane, it is a nonminimum phase system.
+
+#### Signal analysis
+Complex numbers are used in signal analysis and other fields for a convenient description for periodically varying signals. For given real functions representing actual physical quantities, often in terms of sines and cosines, corresponding complex functions are considered of which the real parts are the original quantities. For a sine wave of a given frequency, the absolute value | z | of the corresponding z is the amplitude and the argument arg(z) is the phase.
+
+If Fourier analysis is employed to write a given real-valued signal as a sum of periodic functions, these periodic functions are often written as complex valued functions of the form
+
+![alt tag](https://wikimedia.org/api/rest_v1/media/math/render/svg/651a6be82d6764e4b48320cdd4259ab8af48b1f2)
+
+and
+
+![alt tag](https://wikimedia.org/api/rest_v1/media/math/render/svg/ee5a1f16e771f3403dad48e5ecde41e2c462a84a)
+
+where ω represents the angular frequency and the complex number A encodes the phase and amplitude as explained above.
+
+This use is also extended into digital signal processing and digital image processing, which utilize digital versions of Fourier analysis (and wavelet analysis) to transmit, compress, restore, and otherwise process digital audio signals, still images, and video signals.[Wikipedia](https://en.wikipedia.org/wiki/Complex_number#Applications)
 
 Node
 ----
@@ -17,6 +48,7 @@ You can get this package with NPM:
 ```js
 var Complex = require('complex');
 console.log(new Complex(3, 4).abs()); // 5 the absolute value of 3+4i
+```
 
 Testing
 -------
@@ -24,9 +56,13 @@ Testing
 Testing is done with Mocha and Expect.js:
 
 	# install dependencies
+	
 	npm install
+	
 	# run the tests in node
+	
 	./node_modules/.bin/mocha ./lib/complex.js
+	
 
 API Documentation
 -----------------
@@ -180,9 +216,14 @@ myComplex.log([Value]); // for myComplex.log()equates to '1.609437912+0.64350110
 ```
 
 #### Arguments:
-Log[w] = Log[|w|]+I*(Arg[w]+2*Pi*k), for any integer k
+
+Log[w] = Log[|w|]+I*(Arg[w]+2*Pi*k), 
+for any integer k:
+
 Log[|w|] = real part
+
 (Arg[w]+2*Pi*k) = imaginary part
+
 1. principalValue (number) For one complex value , there are infinitely many logarithms, because we can choose any integer as the Value! So it is clearly not like the real logarithm. Complex logarithm-simplifications can be made by forcing Arg[w] to be in the interval [-Pi,Pi] and always taking k = 0.
 
 
