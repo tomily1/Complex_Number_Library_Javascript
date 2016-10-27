@@ -26,10 +26,12 @@ Complex numbers are used in signal analysis and other fields for a convenient de
 
 If Fourier analysis is employed to write a given real-valued signal as a sum of periodic functions, these periodic functions are often written as complex valued functions of the form
 
-{\displaystyle x(t)=Re\{X(t)\}\,} x(t)=Re\{X(t)\}\,
+![alt tag](https://wikimedia.org/api/rest_v1/media/math/render/svg/651a6be82d6764e4b48320cdd4259ab8af48b1f2)
+
 and
 
-{\displaystyle X(t)=Ae^{i\omega t}=ae^{i\phi }e^{i\omega t}=ae^{i(\omega t+\phi )}\,} X(t)=Ae^{i\omega t}=ae^{i\phi }e^{i\omega t}=ae^{i(\omega t+\phi )}\,
+![alt tag](https://wikimedia.org/api/rest_v1/media/math/render/svg/ee5a1f16e771f3403dad48e5ecde41e2c462a84a)
+
 where ω represents the angular frequency and the complex number A encodes the phase and amplitude as explained above.
 
 This use is also extended into digital signal processing and digital image processing, which utilize digital versions of Fourier analysis (and wavelet analysis) to transmit, compress, restore, and otherwise process digital audio signals, still images, and video signals.[Wikipedia](https://en.wikipedia.org/wiki/Complex_number#Applications)
@@ -52,11 +54,11 @@ Testing
 Testing is done with Mocha and Expect.js:
 
 	# install dependencies
-	```sh
+	```
 	npm install
 	```
 	# run the tests in node
-	```sh
+	```
 	./node_modules/.bin/mocha ./lib/complex.js
 	```
 
@@ -212,9 +214,14 @@ myComplex.log([Value]); // for myComplex.log()equates to '1.609437912+0.64350110
 ```
 
 #### Arguments:
-Log[w] = Log[|w|]+I*(Arg[w]+2*Pi*k), for any integer k
+
+Log[w] = Log[|w|]+I*(Arg[w]+2*Pi*k), 
+for any integer k:
+
 Log[|w|] = real part
+
 (Arg[w]+2*Pi*k) = imaginary part
+
 1. principalValue (number) For one complex value , there are infinitely many logarithms, because we can choose any integer as the Value! So it is clearly not like the real logarithm. Complex logarithm-simplifications can be made by forcing Arg[w] to be in the interval [-Pi,Pi] and always taking k = 0.
 
 
