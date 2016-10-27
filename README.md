@@ -47,7 +47,7 @@ You can get this package with NPM:
 
 ```js
 var Complex = require('complex');
-console.log(new Complex(3, 4).abs()); // 5 the absolute value of 3+4i
+console.log(new Complex(3, 4).magnitude()); // 5 the absolute/magnitude value of 3+4i
 ```
 
 Testing
@@ -121,8 +121,8 @@ Calculates the magnitude of the complex number
 Magnitude is the square root of the square of the total of the real and img values
 
 ```js
-myComplex = new complex(3,4);
-myComplex.magnitude(); //equates to 5
+complexNum = new complex(3,4);
+complexNum.magnitude(); //equates to 5
 ```
 
 
@@ -131,8 +131,8 @@ myComplex.magnitude(); //equates to 5
 Calculates the angle with respect to the real axis i.e x-axis, in radians.
 
 ```js
-myComplex = new complex(0,1);
-myComplex.angle(); // equates to PI/2
+complexNum = new complex(0,1);
+complexNum.angle(); // equates to PI/2
 ```
 
 
@@ -141,8 +141,8 @@ myComplex.angle(); // equates to PI/2
 Calculates the conjugate of the complex number (multiplies the imaginary part by -1)
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.conjugate(); // equates to 2-i
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.conjugate(); // equates to 2-i
 ```
 
 
@@ -151,8 +151,8 @@ myComplex.conjugate(); // equates to 2-i
 Negates the number (multiplies both the real and imaginary part with -1)
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.negate(); // equates to -2-i
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.negate(); // equates to -2-i
 ```
 
 
@@ -161,8 +161,8 @@ myComplex.negate(); // equates to -2-i
 Multiplies the number with a real or another complex equation
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.multiply(z); 
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.multiply(z); 
 ```
 
 
@@ -171,8 +171,8 @@ myComplex.multiply(z);
 Divides the number by a real or another complex equation
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.divide(z);
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.divide(z);
 ```
 
 
@@ -181,8 +181,8 @@ myComplex.divide(z);
 Adds a real or complex equation
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.add(z);
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.add(z);
 ```
 
 
@@ -191,8 +191,8 @@ myComplex.add(z);
 Subtracts a real or complex equation
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.sub(z); // argument z can be a real number or a complex equation
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.sub(z); // argument z can be a real number or a complex equation
 ```
 
 
@@ -201,8 +201,8 @@ myComplex.sub(z); // argument z can be a real number or a complex equation
 Returns the square root of a complex equation
 
 ```js
-myComplex = new complex(1,4); // complex equation 1+4i
-myComplex.sqrt(); // equates to '1.60048518+1.249621068i'
+complexNum = new complex(1,4); // complex equation 1+4i
+complexNum.sqrt(); // equates to '1.60048518+1.249621068i'
 ```
 
 
@@ -211,8 +211,8 @@ myComplex.sqrt(); // equates to '1.60048518+1.249621068i'
 Returns the natural logarithm (base `E`) of a complex equation
 
 ```js
-myComplex = new complex(4,3); // complex equation 4+3i
-myComplex.log([Value]); // for myComplex.log()equates to '1.609437912+0.643501109i' 
+complexNum = new complex(4,3); // complex equation 4+3i
+complexNum.log([Value]); // for complexNum.log()equates to '1.609437912+0.643501109i' 
 ```
 
 #### Arguments:
@@ -232,8 +232,8 @@ Log[|w|] = real part
 Calculates the `e^z` exponential of a complex equation. where z is the complex equation.
 
 ```js
-myComplex = new complex(4,3); // complex equation 4+3i
-myComplex.exp(); // equates to '-54.051758861+7.704891373i'
+complexNum = new complex(4,3); // complex equation 4+3i
+complexNum.exp(); // equates to '-54.051758861+7.704891373i'
 ```
 
 
@@ -242,8 +242,8 @@ myComplex.exp(); // equates to '-54.051758861+7.704891373i'
 Calculates the sine of a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.sin(); // equates to '3.165778513+1.959601041i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.sin(); // equates to '3.165778513+1.959601041i'
 ```
 
 
@@ -252,8 +252,8 @@ myComplex.sin(); // equates to '3.165778513+1.959601041i'
 Calculates the cosine of a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.cos(); // equates to '2.032723007-3.051897799i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.cos(); // equates to '2.032723007-3.051897799i'
 ```
 
 
@@ -262,8 +262,8 @@ myComplex.cos(); // equates to '2.032723007-3.051897799i'
 Calculates the tangent of  a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.tan(); // equates to '0.033812826+1.014793616i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.tan(); // equates to '0.033812826+1.014793616i'
 ```
 
 
@@ -272,8 +272,8 @@ myComplex.tan(); // equates to '0.033812826+1.014793616i'
 Calculates the hyperbolic sine of  a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.sinh(); // equates to '-0.489056259+1.403119251i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.sinh(); // equates to '-0.489056259+1.403119251i'
 ```
 
 
@@ -282,8 +282,8 @@ myComplex.sinh(); // equates to '-0.489056259+1.403119251i'
 Calculates the hyperbolic cosine of a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.cosh(); // equates to '-0.642148125+1.068607421i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.cosh(); // equates to '-0.642148125+1.068607421i'
 ```
 
 
@@ -292,8 +292,8 @@ myComplex.cosh(); // equates to '-0.642148125+1.068607421i'
 Calculates the hyperbolic tangent of a complex equation
 
 ```js
-myComplex = new complex(1,2); // complex equation 1+2i
-myComplex.tanh(); //'1.166736257-0.243458201i'
+complexNum = new complex(1,2); // complex equation 1+2i
+complexNum.tanh(); //'1.166736257-0.243458201i'
 ```
 
 ### Method: toPolar
@@ -301,8 +301,8 @@ myComplex.tanh(); //'1.166736257-0.243458201i'
 Converts a complex equation to polar form.
 
 ```js
-myComplex = new complex(1,1); // complex equation 2+i
-myComplex.toPolar(); // result gives '1.4142135623730951 0.7853981633974483'
+complexNum = new complex(1,1); // complex equation 2+i
+complexNum.toPolar(); // result gives '1.4142135623730951 0.7853981633974483'
 ```
 
 
@@ -311,8 +311,8 @@ myComplex.toPolar(); // result gives '1.4142135623730951 0.7853981633974483'
 Returns a string representation of a complex equation
 
 ```js
-myComplex = new complex(2,1); // complex equation 2+i
-myComplex.toString(); // returns in string form 2+i
+complexNum = new complex(2,1); // complex equation 2+i
+complexNum.toString(); // returns in string form 2+i
 ```
 
 
@@ -332,7 +332,7 @@ new complex(1, 1).toString(); // 1+i
 Checks if the real and imaginary components are equal to the passed in compelex components.
 
 ```js
-myComplex.equals(z);
+complexNum.equals(z);
 ```
 
 ### Arguments:

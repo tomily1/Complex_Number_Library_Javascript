@@ -1,0 +1,8 @@
+var complex = require('complex_number_javascript');
+
+complexNum = new complex(1,3);
+complexNum2 = new complex(3,4);
+
+addComplexNums = complexNum.add(complexNum2);
+
+console.log(addComplexNums);
