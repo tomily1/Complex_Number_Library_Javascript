@@ -1,12 +1,8 @@
-var complex = require('./lib/complex.js');
+var Complex = require("./lib/complex.js");
+var complex = new Complex(1,3);
+var complex2 = new Complex(-1 ,-2);
 
-var complexes = new complex(1,3);
-var complex2 = new complex(1,-3);
-var comp = new complex((1,4),(1,-2))
-
-
-var answer2 = (comp).divide(2);
+//console.log(complex2.sub(complex).toString());
 
 
-console.log("\n",answer2.toString());
-
+console.log(complex.multiply(complex2).toString());
