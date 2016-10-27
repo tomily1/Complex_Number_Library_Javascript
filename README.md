@@ -56,13 +56,13 @@ Testing
 Testing is done with Mocha and Expect.js:
 
 	# install dependencies
-	```
+	
 	npm install
-	```
+	
 	# run the tests in node
-	```
+	
 	./node_modules/.bin/mocha ./lib/complex.js
-	```
+	
 
 API Documentation
 -----------------
