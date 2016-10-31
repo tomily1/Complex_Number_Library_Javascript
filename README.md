@@ -84,7 +84,7 @@ var complex = new complex(real, img);
 It helps create a valid complex instance for manipulation
 
 ```js
-var z = complex.newDeclare(real, img);
+var z = complex.newDeclare(real, img); // use new complex(real, img) instead;
 ```
 
 #### Arguments:
@@ -95,8 +95,8 @@ var z = complex.newDeclare(real, img);
 #### Examples:
 
 ```js
-var z = Complex.newDeclare(2, 4);
-var z = Complex.newDeclare(5);
+var z = complex.newDeclare(2, 4); // use new complex(real, img) instead;
+var z = complex.newDeclare(5); // use new complex(real, img) instead;
 ```
 
 
