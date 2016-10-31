@@ -1,6 +1,6 @@
 {
   "name": "complex_number_library",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Allows reuse for calculations involving complex numbers",
   "keywords": [
     "Complex Numbers",
@@ -8,7 +8,11 @@
     "Math",
     "Calculus"
   ],
-  "bugs": "https://github.com/tomly1/Complex_Number_Library/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomly1/Complex_Number_Library_Javascript.git"
+  },
+  "bugs": "https://github.com/tomly1/Complex_Number_Library_Javascript/issues",
   "main": "lib/complex",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +26,8 @@
   ],
   "devDependencies": {
     "expect": "*",
-    "jasmine": "^2.5.2",
     "mocha": "*"
-  }
+  },
+  "homepage": "https://github.com/tomly1/Complex_Number_Library_Javascript"
+  
 }
