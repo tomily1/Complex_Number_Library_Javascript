@@ -1,6 +1,6 @@
 {
   "name": "complex_number_library",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Allows reuse for calculations involving complex numbers",
   "keywords": [
     "Complex Numbers",
